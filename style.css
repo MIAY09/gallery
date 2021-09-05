@@ -1,0 +1,71 @@
+.heading{
+    text-align: center;
+    font-family: 'Rampart One', cursive;
+    margin-bottom: 100px;
+    background-color: rgba(128, 128, 128, 0.479);
+    border-left: 2px solid rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 0 10px;
+    border-top:  2px solid rgba(0, 0, 0, 0.5);
+    border-bottom:  2px solid rgba(0, 0, 0, 0.5);
+}
+.container_img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+.image{
+     width: 24%; 
+    padding: 3px;
+    background-color: rgba(117, 115, 115, 0.322) ;
+    filter: blur(3px) grayscale(80%) brightness(65%);
+    opacity: 0.5;
+    transition: linear 0.5s;
+}
+.image:hover{
+    filter: blur(0px) grayscale(0%) brightness(110%);
+    opacity: 1;
+}
+.link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rampart One', cursive;
+    padding: 50px 0;
+}
+.author{
+    text-decoration: none;
+    color: black;
+    border-left: 2px solid rgba(0, 0, 0, 0.5);
+    border-right: 2px solid rgba(0, 0, 0, 0.5);
+    padding: 0 10px;
+    border-top:  2px solid rgba(0, 0, 0, 0.5);
+    border-bottom:  2px solid rgba(0, 0, 0, 0.5);
+    background-color: rgba(117, 115, 115, 0.322) ;
+}
+.box{
+    width: 100px ;
+    height: 100px;
+    background-color: red;
+    transition: linear 1s;
+    animation-name: box;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.box:active{
+    background-color: blue;
+  /*  transform: rotate(360deg) translateX(500px) scaleX(2)*/;
+
+}
+@keyframes box{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    } 
+    100%{
+        transform: rotate(0deg);
+    }
+}
